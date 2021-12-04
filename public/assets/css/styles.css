@@ -1,0 +1,294 @@
+
+body{
+    font-family:'Gill Sans', sans-serif;
+    color:black;
+    margin: 0%;
+}
+
+h1,h2,h3{
+    color:black;
+    font-family: 'Mukta', sans-serif;
+}
+
+.botao{
+    color:#FFFFFF;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #d4ae02;
+    font-size: .9em;
+    border-radius: 3px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #5e5d5c  ;
+    font-size: 60px;
+    font-family: "Playball", monospace;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Andada Pro', serif;
+}
+
+nav ul li{
+    text-align:center;
+    width: 100%;
+
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/public/assets/css/images/hotelzao.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:black;
+    text-align:center;
+    padding:20px ;
+
+}
+
+header h1{
+    color:   black ;
+    text-shadow: 2px 2px #e9e8e5  ;
+    font-family: 'Mukta', sans-serif;
+    font-size: 60px;
+}
+
+header p{
+    margin-bottom: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-size:22px;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center ;
+    padding: 10px 10px 20px 20px;
+    background-color: black;
+    color: #FFFFFF;
+
+}
+
+#sobre h2{
+    color:#FFFFFF;
+    font-family: 'Mukta', sans-serif;
+    font-size: 30px;
+}
+
+#sobre p{
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#sobre .botao{
+    background-color: #F1F1F1;
+    color:#1c1c1c;
+}
+
+#serviços{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+}
+
+
+#h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+    font-size: 30px;
+}
+#serviços div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center ;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#fotos h2{
+    margin-bottom: 20px;
+}
+
+#fotos img{
+    width: 100%;
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center ;
+    width: auto;
+    /*padding: 10px 600px 10px 600px;*/
+    background-color: black;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contato h2{
+    color:white;
+    display: inline-block;
+    font-family: 'Mukta', sans-serif;
+    font-size: 30px;
+}
+
+#localizacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center ;
+    padding: 30px;
+}
+
+#localizacao h2{
+    color: black;
+    font-family: 'Mukta', sans-serif;
+    font-size: 30px;
+}
+
+#localizacao p{
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    font-family: 'Roboto', sans-serif;
+
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer a{
+    text-decoration: none;
+    color: #0ff;
+
+}
+
+@media screen and (min-width:768px){
+    nav{
+        display:flex;
+        flex-direction: row;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+        margin-right: 1.8%;
+    }
+
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    #sobre{
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-width: 250px;
+    }
+
+    #serviços{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;        
+    }
+
+    #serviços h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    #serviços div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    #fotos{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    #fotos h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #fotos img{
+        width: 33%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #contato h2, #contato p{
+        width: 100%;
+    }
+
+    .seçao_1{
+        flex-direction: row;
+
+    }
+}
+
+
