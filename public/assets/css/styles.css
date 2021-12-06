@@ -62,7 +62,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("/public/assets/css/images/hotelzao.png");
+    background-image: url("/assets/css/images/hotelzao.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
