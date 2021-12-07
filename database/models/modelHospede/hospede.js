@@ -4,9 +4,9 @@ const database = require('../../db')
 const Hospede = database.define("hospedes", {
     id_hospede: {
         type: Sequelize.INTEGER,
-        autoIncremente: true,
+        autoIncrement: true,
         allowNull: false,
-        primaryKey: false,
+        primaryKey: true,
     },  
     nome: {
         type: Sequelize.STRING(255),

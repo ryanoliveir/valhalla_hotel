@@ -5,6 +5,24 @@ var pattern = "[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚ
 var pattern2 = "/^([a-zA-Z][^<>\"!@[\]#$%¨&*()~^:;ç,\-´`=+{}º\|/\\?]{1,})@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/"
 var cadastrar = document.querySelector('.cadastrar')
 cadastrar.addEventListener('click',Logar)
+
+
+const sendToServer = async(nome, email, password) => {
+    const data = {nome, email, password}
+
+    const options = {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+    }
+
+    const response = await fetch('/register', options)
+    console.log(response)
+}
+
+
+
+
 function Logar(){
     window.location.href = "http://localhost:3000/login/";
 }
@@ -40,4 +58,6 @@ function Cadastrar(){ //criação da função Cadastrar
               w++
       }
     }
+
+    sendToServer(arrayValores[0], arrayValores[1], arrayValores[2])
 }
