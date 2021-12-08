@@ -28,6 +28,9 @@ app.use('/cadastro', cadastro)
 app.use('/home', home)
 app.use('/reserva', reserva)
 
+app.get('/inserir', (req, res) =>{
+    res.sendFile(__dirname + '/public/pages/inserir_page/inserir.html')
+})
 
 
 
