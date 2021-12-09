@@ -5,6 +5,6 @@ const config = require('./auth')
 module.exports = sessions({
     secret: config.secret,
     saveUninitialized: true,
-    cookie: {maxAge: config.cookie},
+    cookie: {maxAge: 1800000},
     resave: false
 })

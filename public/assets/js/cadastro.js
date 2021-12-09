@@ -18,6 +18,7 @@ const sendToServer = async(nome, email, password) => {
 
     const response = await fetch('/register', options)
     console.log(response)
+    location.href = '/home'
 }
 
 

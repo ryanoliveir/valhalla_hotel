@@ -7,13 +7,26 @@ var u = 0
 var k = 0
 var l = 0
 var j = 0
+
+const sendToSever = async (numero_pessoas, quarto, data) => {
+    const data_api = {numero_pessoas, quarto, data}
+    const options = {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data_api)
+    }
+
+
+    const response = await fetch('/datahotel/insert', options)
+}
+
 function Enviar(){
     var pessoas = document.querySelector('#pess').value
     var quarto = document.querySelector('#qua').value
     var datas = document.querySelector('#date').value
-    console.log(datas)
-    console.log(pessoas)
-    console.log(quarto)
+    //console.log(datas)
+    //console.log(pessoas)
+    //console.log(quarto)
     var elemento = document.createElement('li')
     var elemento2 = document.createElement('button')
     var elemento3 = document.createElement('button')
@@ -28,12 +41,24 @@ function Enviar(){
     elemento3.innerHTML = 'SELECIONE PARAR ALTERAR'
     elemento2.addEventListener('click',Excluir)
     elemento3.addEventListener('click',Alterar)
-    function Excluir(){
+    async function Excluir(){
+
         if(u==i){
             elemento.remove()
             elemento2.remove()
             elemento3.remove()
         }
+
+        const options = {
+            method: 'GET',
+            headers: {'Content-Type': 'application/json'}
+        }
+
+        const response = await fetch('/datahotel/remove',options )
+        console.log(JSON.stringify(response))
+
+
+
     }
         function Alterar(){
             if(k==i){
@@ -64,5 +89,5 @@ function Enviar(){
     
     
 
-    
+    sendToSever(pessoas, quarto, datas)
 }

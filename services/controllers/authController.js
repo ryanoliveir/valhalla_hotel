@@ -26,7 +26,7 @@ router.post('/authenticate', async (req, res) => {
     }
 
     
-    req.session.userid = user.id_usuario
+    req.session.userid = user.id_user
     res.json({code: 200})
 })
 

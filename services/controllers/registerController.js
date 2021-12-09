@@ -38,6 +38,8 @@ router.post('/', async (req, res) => {
 
         await database.sync(); 
 
+        req.session.userid = user.id_user
+
     }
     
     await registerUser()
