@@ -14,7 +14,7 @@ const registerUser = require('./services/controllers/registerController')
 const reservaController = require('./services/controllers/reservaController')
 
 const login = require('./routes/login')
-const menu = require('./routes/menu')
+// const menu = require('./routes/menu')
 const cadastro = require('./routes/cadastro')
 const home = require('./routes/home')
 const reserva = require('./routes/reservas')

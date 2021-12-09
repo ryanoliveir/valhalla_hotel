@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body {
 
     padding: 0;
@@ -72,4 +73,39 @@ background-color: rgba(255, 196, 0, 0.925);
   
     
 
+}
+#button{
+    color:white;
+    background-color: #414141;
+    border: 0px;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+#button:hover{
+    background-color: rgba(255, 196, 0, 0.925);
+    border-radius: 5px;
+    color: #000000;
+
+}
+.botao{
+    color:white;
+    background-color: #414141;
+    border: 0px;
+    border-radius: 10px;
+    width: 250px;
+    cursor: pointer;
+
+}
+.botao1{
+    color:white;
+    background-color: #414141;
+    border: 0px;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+
+}
+li{
+    font-family: 'Roboto', sans-serif;
 }

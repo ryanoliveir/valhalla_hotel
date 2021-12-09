@@ -35,8 +35,10 @@ function Enviar(){
     listona.append(elemento3)
     elemento3.setAttribute('id',k++)
     elemento2.setAttribute('id',u++)
+    elemento3.setAttribute('class','botao')
+    elemento2.setAttribute('class','botao1')
     elemento.setAttribute('id', i++)
-    elemento.innerHTML = 'Data: '+datas+' Número de pessoas: '+pessoas+' Tipo de quarto: '+quarto
+    elemento.innerHTML = ' - Data: '+datas+' - Número de pessoas: '+pessoas+' - Tipo de quarto: '+quarto
     elemento2.innerHTML = 'EXCLUIR'
     elemento3.innerHTML = 'SELECIONE PARAR ALTERAR'
     elemento2.addEventListener('click',Excluir)
@@ -81,7 +83,7 @@ function Enviar(){
                 var quarto1 = document.querySelector('#qua').value
                 var datas1 = document.querySelector('#date').value
         
-                elemento.innerHTML = 'Data: '+datas1+' Número de pessoas: '+pessoas1+' Tipo de quarto: '+quarto1
+                elemento.innerHTML = ' - Data: '+datas1+ ' - Número de pessoas: '+pessoas1+ ' - Tipo de quarto: '+quarto1
                 j=0
             }
             }
